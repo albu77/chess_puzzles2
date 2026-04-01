@@ -4361,7 +4361,7 @@
     {"problemid":4359,"first":"Black to Move","type":"Mate in Three","fen":"4rb2/5p1k/p1P5/4B2p/4pPpK/P4qP1/1PR3QP/8 b - - 0 1","moves":"e8-e5;f4-e5;f8-e7;h4-h5;f3-f5"},
     {"problemid":4360,"first":"Black to Move","type":"Mate in Three","fen":"2QQ4/5k2/4r3/1P6/5p1p/2R4P/6PK/4q3 b - - 0 1","moves":"e1-g3;c3-g3;h4-g3;h2-g1;e6-e1"},
     {"problemid":4361,"first":"Black to Move","type":"Mate in Three","fen":"8/ppp2p1k/5Pp1/8/3Qn3/1PP1r1P1/P4q1P/2R2B1K b - - 0 1","moves":"e3-g3;f1-h3;f2-f3;h3-g2;f3-g2"},
-    {"problemid":4362,"first":"Black to Move","type":"Mate in Two","fen":"6k1/8/3Rp1p1/p5p1/4R1n1/4PKP1/PPQ3P1/7q b - - 0 1","moves":"h1-f1;c2-f2;g4-h2"},
+    {"problemid":4362,"first":"Black to Move","type":"Mate in Three","fen":"6k1/8/3Rp1p1/p5p1/4R1n1/4PKP1/PPQ3P1/7q b - - 0 1","moves":"h1-f1;c2-f2;g4-h2"},
     {"problemid":4363,"first":"Black to Move","type":"Mate in Three","fen":"4k2r/8/p5p1/3pn2p/1b2r2P/1B3PQ1/1qP1N3/3K1R1R b k - 0 1","moves":"e4-d4;e2-d4;b2-d4;d1-c1;d4-a1"},
     {"problemid":4364,"first":"Black to Move","type":"Mate in Three","fen":"3r3k/3r2pp/2p5/Q1Pq3P/1p3BP1/1P2P3/PR6/2K3R1 b - - 0 1","moves":"d5-d1;g1-d1;d7-d1;c1-c2;d8-d2"},
     {"problemid":4365,"first":"Black to Move","type":"Mate in Three","fen":"r5k1/5p1p/1pn2PpQ/p2b4/1P1B4/P4q2/1KP4P/1RR5 b - - 0 1","moves":"f3-a3;b2-a3;a5-b4;a3-b2;a8-a2"},
