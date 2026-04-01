@@ -150,47 +150,51 @@ function App() {
         )}
       </div>
       <div id="problem-select-container">
-        <label id="select-problem-text" htmlFor="problem-select">
-          Select problem number:{' '}
-        </label>
-        <button
-          className="button"
-          id="navigation-button-prev"
-          onClick={() =>
-            setCurrentProblemIndex(
-              (currentProblemIndex - 1 + numberOfPuzzles) % numberOfPuzzles
-            )
-          }
-        >
-          &#9664;
-        </button>
-        <select
-          id="problem-select"
-          value={selectedProblemID}
-          onChange={(e) => setSelectedProblemID(parseInt(e.target.value))}
-        >
-          {Array.from({ length: numberOfPuzzles }, (_, index) => (
-            <option key={index} value={index}>
-              {index + 1}
-            </option>
-          ))}
-        </select>
-        <button 
-          className="button"
-          id="go-button"
-          onClick={() => goToProblem(selectedProblemID)}>
-          Go
-        </button>
-        <button
-          className="button"
-          id="navigation-button-next"
-          onClick={() =>
-            setCurrentProblemIndex((currentProblemIndex + 1) % numberOfPuzzles)
-          }
-        >
-          &#9654;
-        </button>
-      </div>
+  <label id="select-problem-text" htmlFor="problem-select">
+    Select problem number:{' '}
+  </label>
+  <input 
+    type="number" 
+    id="problem-input"
+    min="1" 
+    max={numberOfPuzzles}
+    value={selectedProblemID + 1}
+    onChange={(e) => {
+      const val = parseInt(e.target.value);
+      if (val >= 1 && val <= numberOfPuzzles) {
+        setSelectedProblemID(val - 1);
+      }
+    }}
+    placeholder="Enter puzzle #"
+    style={{
+      padding: '8px',
+      margin: '3px',
+      borderRadius: '4px',
+      width: '100px',
+      fontSize: '14px'
+    }}
+  />
+  <button
+    className="button"
+    id="navigation-button-prev"
+    onClick={() =>
+      setCurrentProblemIndex(
+        (currentProblemIndex - 1 + numberOfPuzzles) % numberOfPuzzles
+      )
+    }
+  >
+    &#9664;
+  </button>
+  <button
+    className="button"
+    id="navigation-button-next"
+    onClick={() =>
+      setCurrentProblemIndex((currentProblemIndex + 1) % numberOfPuzzles)
+    }
+  >
+    &#9654;
+  </button>
+</div>
       <div id="problem-type-select-container">
       <label id="select-problem-type-text" htmlFor="problem-type-select">
         Or, select problem type:
